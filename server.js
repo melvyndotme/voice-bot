@@ -32,7 +32,7 @@ wss.on('connection', (ib) => {
           voice:'alloy',
           input_audio_format:'pcm16',
           turn_detection:{ type:'server_vad', create_response:true },
-          instructions:"You are the call assistant for <Company>. Be concise and helpful."
+          instructions:"You are the call assistant for Befinity AI. Be concise and helpful."
         }
       }));
       oai.send(JSON.stringify({
@@ -40,8 +40,8 @@ wss.on('connection', (ib) => {
         response:{
           modalities:['audio'],
           instructions:
-            "Hello, you’re speaking with the AI assistant for <Company>. " +
-            "I can help with bookings and appointment confirmations. " +
+            "Hello, you’re speaking with the AI assistant for Befinity AI. " +
+            "I can help with questions about our workshops and your registration confirmations. " +
             "Say 'human' or press 0 for a person."
         }
       }));
